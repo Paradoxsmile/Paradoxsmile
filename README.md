@@ -22,6 +22,6 @@
 <img src="https://github-readme-stats.vercel.app/api?username=paradoxsmile&show_icons=true&theme=tokyonight&hide_border=true" height="160"/> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=paradoxsmile&layout=compact&theme=tokyonight&hide_border=true" height="160"/>
 
 ### 📫 Connect
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/vogtmaximilian)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vogtmaximilian/)
 
 <img src="./assets/footer.svg" width="100%"/>
