@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#0f2a3d"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#16c79a" stroke-opacity="0.06"/>
+    </pattern>
+    <style>
+      .edge { stroke:#16c79a; stroke-opacity:0.25; stroke-width:1.2; }
+      .pulse { stroke:#4fc3f7; stroke-width:2; stroke-dasharray:12 400; fill:none; }
+      .node { fill:#16c79a; }
+      .title { font: 700 64px Consolas, 'Courier New', monospace; fill:#ffffff; }
+      .sub { font: 400 20px Consolas, 'Courier New', monospace; fill:#16c79a; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bg)"/>
+  <rect width="1200" height="300" fill="url(#grid)"/>
+
+  <!-- Verbindungen -->
+  <path class="edge" d="M80 60L220 140L120 240M220 140L340 70M980 80L1080 160L960 240M1080 160L1150 60M860 150L980 80"/>
+  <!-- Signale -->
+  <path class="pulse" d="M80 60L220 140L340 70"><animate attributeName="stroke-dashoffset" from="412" to="0" dur="3s" repeatCount="indefinite"/></path>
+  <path class="pulse" d="M860 150L980 80L1080 160L960 240"><animate attributeName="stroke-dashoffset" from="412" to="0" dur="4s" repeatCount="indefinite"/></path>
+
+  <!-- Knoten -->
+  <g class="node">
+    <circle cx="80" cy="60" r="5"><animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="220" cy="140" r="7"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="120" cy="240" r="5"/>
+    <circle cx="340" cy="70" r="5"><animate attributeName="opacity" values="1;0.4;1" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="860" cy="150" r="5"/>
+    <circle cx="980" cy="80" r="7"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="1080" cy="160" r="6"><animate attributeName="opacity" values="1;0.3;1" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="960" cy="240" r="5"/>
+    <circle cx="1150" cy="60" r="5"/>
+  </g>
+
+  <text x="600" y="145" text-anchor="middle" class="title">Maximilian</text>
+  <text x="600" y="190" text-anchor="middle" class="sub">Autonomous Driving · Robotics · Machine Learning</text>
+</svg>
